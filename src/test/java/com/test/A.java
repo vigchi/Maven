@@ -23,7 +23,8 @@ public class A {
 		WebElement username = driver.findElement(By.id("email"));
 		username.sendKeys(getDate(1,0));
 		WebElement pass = driver.findElement(By.id("pass"));
-		pass.sendKeys(getDate(1,1));	
+		pass.sendKeys(getDate(1,1));
+		System.out.println("Success");
 
 }
 
@@ -37,5 +38,6 @@ public class A {
 		Cell c = r.getCell(cellno);
 		v = c.getStringCellValue();
 		return v;
+	
 	}
 }
